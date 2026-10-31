@@ -2,25 +2,23 @@ let num1 = 45;
 
 let num2 = 6;
 
-console.log("il valore della variabile num1 è :" + num1);
+let num3 = 4;
+let num4 = 8;
 
-console.log('il valore della variabile num2 è  ${num2}');
+let num5 = 70;
+
+let somma = num1 + num2 + num3 + num4 + num5 
+
+console.log(somma);
+
+let media = somma / 5 
+
+console.log(media);
+
+console.log('la somma tra i numeri equivale a ${somma}, la media equivale a ${media}');
 
 
-let stringa = 'ciao a tutti';
 
-
-stringa = 'benvenuti';
-
-console.log('il valore della stringa è ${stringa}');
-
-
-const pGreco = 3.14;
-
-
-pGreco = 20;
-
-console.log('il valore di pGreco è ${pGreco}');
 
 
 

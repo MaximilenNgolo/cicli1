@@ -1,21 +1,90 @@
-let numGattitotali = 44;
-
-let numGattiInfila = 6
-
-let numFile = Math.floor(numGattitotali / numGattiInfila)
-
-console.log(numFile);
-
-let numRimastiFuori = numGattitotali % numGattiInfila;
-
-console.log(numRimastiFuori);
+ let voto = parseInt(prompt(`inserisci il tuo voto `))
 
 
-let numMancanti = numGattiInfila - numRimastiFuori;
+/* 
+if (voto <= 18) {
 
-console.log(numMancanti);
+    console.log(`insufficiente`);
+    
+    
+}else if (voto > 18 && voto <= 21) {
 
-console.log(`Ci sono ${numFile} file di gatti e ne mancano ${numMancanti} per una nuova fila con un avanzo di ${numRimastiFuori}`);
+    console.log(`sufficiente`);
+    
+    
+} else if (voto > 21 && voto <= 24) {
+
+    console.log(`buono`);
+    
+    
+} else if (voto > 24 && voto <= 27) {
+
+    console.log(`distinto`);
+    
+    
+} else if (voto > 27 && voto <= 29) {
+
+    console.log(`ottimo`);
+    
+    
+} else if (voto == 30) {
+
+    console.log(`eccellente`);
+    
+    
+} else {
+
+    console.log(`voto non valido`);
+    
+    
+}  */ 
 
 
 
+    let giudizio;
+
+
+    switch (true) {
+        case voto <= 18:
+            giudizio = `insufficiente`
+
+
+            
+            break;
+
+
+        case voto > 18 && voto <= 21:
+            giudizio = `sufficiente`
+            break;
+
+        case voto > 21 && voto <= 24:
+            giudizio = `buono`
+            break;
+
+        case voto > 24 && voto <= 27:
+            giudizio = `distinto`
+            break;
+
+
+        case voto > 27 && voto <= 29:
+            giudizio = `ottimo`
+             break;
+
+
+
+        case voto == 30:
+            giudizio = `eccelente`
+            break;
+    
+    
+    
+        default:
+              giudizio = `voto non valido`
+
+
+        
+    }
+
+
+    console.log(giudizio);
+    

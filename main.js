@@ -1,15 +1,18 @@
-let annoCorrente = 2026 ;
-let annoNascita = 2000;
+let num1 = parseInt (prompt('inserisci il primo numero'));
+let num2 = parseInt (prompt('inserisci il secondo numero'));
 
 
-let age = annoCorrente - annoNascita
+let somma = num1 + num2
 
-console.log(age);
+let sottrazione = num1 - num2
 
-let anniMancanti = 100 - age
+let moltiplicazione = num1 - num2
 
-console.log(anniMancanti);
+let divizione = num1 / num2
 
-console.log('hai ${age} anni e ti mancano ${anniMancanti} anni per arrivare a 100');
+let potenza = num1 ** num2
 
+console.log('con i numeri da te scelti, i risultati dellle varie operazione sono:');
+
+console.log('somma ${somma}, sottrazione ${sottrazione}, moltiplicazione ${moltiplicazione}, divizione ${divizione}, potenza ${potenza}');
 

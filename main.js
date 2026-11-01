@@ -1,90 +1,69 @@
- let voto = parseInt(prompt(`inserisci il tuo voto `))
+ let temperatura = Number(prompt(`inserisci la temperatura `))
 
 
 /* 
-if (voto <= 18) {
+if (temperatura <= -10) {
 
-    console.log(`insufficiente`);
+    console.log(`copriti, perche fa mplto freddo`);
     
     
-}else if (voto > 18 && voto <= 21) {
+}else if (temperatura <= 0) {
 
-    console.log(`sufficiente`);
+    console.log(`oggi non fa freddo`);
     
     
-} else if (voto > 21 && voto <= 24) {
+} else if (temperatura < 20) {
 
-    console.log(`buono`);
+    console.log(`non ci sono piu le mezze stagioni`);
     
     
-} else if (voto > 24 && voto <= 27) {
+} else if (temperatura < 30) {
 
-    console.log(`distinto`);
-    
-    
-} else if (voto > 27 && voto <= 29) {
-
-    console.log(`ottimo`);
-    
-    
-} else if (voto == 30) {
-
-    console.log(`eccellente`);
+    console.log(`mi dia qualcosa da bere`);
     
     
 } else {
 
-    console.log(`voto non valido`);
+    console.log(`lu sole lu mare lu ientu`);
     
     
 }  */ 
 
 
 
-    let giudizio;
+    let description;
 
 
     switch (true) {
-        case voto <= 18:
-            giudizio = `insufficiente`
-
-
-            
-            break;
-
-
-        case voto > 18 && voto <= 21:
-            giudizio = `sufficiente`
-            break;
-
-        case voto > 21 && voto <= 24:
-            giudizio = `buono`
-            break;
-
-        case voto > 24 && voto <= 27:
-            giudizio = `distinto`
-            break;
-
-
-        case voto > 27 && voto <= 29:
-            giudizio = `ottimo`
+        case temperatura <= -10:
+            description = `copriti, fa molto freddo`
              break;
 
 
-
-        case voto == 30:
-            giudizio = `eccelente`
+        case temperatura <= 0:
+            description = `oggi non fa molto freddo`
             break;
+
+        case temperatura < 20:
+            description = `non ci stanno le mezze stagione`
+            break;
+
+        case temperatura < 30:
+            description = `mi dia da bere`
+            break;
+
+
+        
     
     
     
         default:
-              giudizio = `voto non valido`
+              description = `lu mare , lu sole, lu ientu`
 
 
         
     }
 
 
-    console.log(giudizio);
+    console.log(description);
     

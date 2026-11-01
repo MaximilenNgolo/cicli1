@@ -1,18 +1,21 @@
-let num1 = parseInt (prompt('inserisci il primo numero'));
-let num2 = parseInt (prompt('inserisci il secondo numero'));
+let numGattitotali = 44;
+
+let numGattiInfila = 6
+
+let numFile = Math.floor(numGattitotali / numGattiInfila)
+
+console.log(numFile);
+
+let numRimastiFuori = numGattitotali % numGattiInfila;
+
+console.log(numRimastiFuori);
 
 
-let somma = num1 + num2
+let numMancanti = numGattiInfila - numRimastiFuori;
 
-let sottrazione = num1 - num2
+console.log(numMancanti);
 
-let moltiplicazione = num1 - num2
+console.log(`Ci sono ${numFile} file di gatti e ne mancano ${numMancanti} per una nuova fila con un avanzo di ${numRimastiFuori}`);
 
-let divizione = num1 / num2
 
-let potenza = num1 ** num2
-
-console.log('con i numeri da te scelti, i risultati dellle varie operazione sono:');
-
-console.log('somma ${somma}, sottrazione ${sottrazione}, moltiplicazione ${moltiplicazione}, divizione ${divizione}, potenza ${potenza}');
 

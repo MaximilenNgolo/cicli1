@@ -1,4 +1,12 @@
- let temperatura = Number(prompt(`inserisci la temperatura `))
+ let num = Number(prompt(`inserisci il tuo numero per ottenere la tabellina `))
+
+
+
+ for (let i = 1 ; i <= 10; i++) {
+    console.log(i * num);
+    
+    
+ }
 
 
 /* 
@@ -31,7 +39,7 @@ if (temperatura <= -10) {
 
 
 
-    let description;
+   /*  let description;
 
 
     switch (true) {
@@ -65,5 +73,7 @@ if (temperatura <= -10) {
     }
 
 
-    console.log(description);
+    console.log(description); */
     
+
+
